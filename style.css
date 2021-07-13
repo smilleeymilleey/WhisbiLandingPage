@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e66465, #9198e5)
+}
+
+.convertor-card {
+  height: 80vmin;
+  width: 50vmin;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  border-radius: 20px;
+  background-color: #9198e5;
+  color: white;
+  box-shadow: 10px 5px 5px rgb(123, 75, 124);
+
+}
+
+.base,
+.converted {
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 4vmin;
+  position: relative;
+}
+
+.base {
+    flex-direction: column;
+    grid-row: 1 / 2;
+}
+
+.converted {
+    flex-direction: column-reverse;
+    grid-row: 2 / 3;
+}
+
+.name {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3vmin;
+    letter-spacing: 0.2em;
+  }
+  
+  .value {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11vmin;
+    letter-spacing: 0.04em;
+  }
+  
+  .symbol {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: -1.2vmin;
+    opacity: 0.7;
+  }
+  
+  .abbr {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+  }
