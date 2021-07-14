@@ -9,19 +9,20 @@
 </head>
 <body>
     <div class="convertor-card">
-        <h2 id="display"></h2>
         <!-- europe only no api connected -->
         <div class="dropdown">
             <label  for="currencyNames">Choose Start Currency :</label>
             <select id="names">
                 <option value="EUR" id="euro">EUR</option>
-               
             </select>
+            <div class="value-section">
+                <span class="symbol">$</span>
+                <input>
+            </div>
             <div class="base">
                 <div class="dropdown">
-                    <label for="currencyNames">Choose Start Currency :</label>
-                    <select id="names">
-                        <option value="EUR" id="euro">EUR</option>
+                    <label for="currencyNames">Choose End Currency :</label>
+                    <select id="newCurrency">
                         <option value="JPY" id="euro">JPY</option>
                     </select>
                 </div>
@@ -29,12 +30,9 @@
                     <span class="symbol">$</span>
                     <input>
                 </div>
-                <div class="value-section">
-                    <span class="symbol">$</span>
-                    <input>
-                </div>
         </div>
             <button id="convertButton">Convert</button>
+            <h2 id="display"></h2>
         </div>     
         </div>
     </div>
