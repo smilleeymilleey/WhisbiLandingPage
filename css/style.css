@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .container {
   position: fixed;
   top: 0;
@@ -24,6 +25,7 @@ body {
 .titleContainer {
   margin-top: 10%;
 }
+
 .convertor-card {
   margin: auto;
   width: 50%;
@@ -46,11 +48,16 @@ body {
   margin-left: 20px;
 }
 
+#date {
+  color: darkgray
+}
+
 #startAmount {
   width: 40%;
   padding-left: 10px;
   margin-left: 40px;
 }
+
 #names {
   width: 50%;
   padding-left: 10px;
@@ -62,7 +69,6 @@ body {
   padding-left: 10px;
   margin-left: 40px;
 }
-
 
 .padding {
   width: 100%;
@@ -81,6 +87,7 @@ body {
   text-align: center;
  
 }
+
 .btn {
   width: 70%;
   height: 30px;
@@ -99,9 +106,8 @@ body {
   box-shadow: 10px 5px 5px darkgrey;
 }
 
-
 .exchangeR {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .newContainer {
