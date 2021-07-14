@@ -23,7 +23,7 @@
             </select>
             </div>
             <div class="column">
-                <select id="newCurrency">
+                <select onChange="getAllCurrencies()" id="newCurrency">
                     <option value="JPY" id="euro">JPY</option>
                     <option value="CAD" id="euro">CAD</option>
                     <option value="MXN" id="euro">MXN</option>
@@ -33,10 +33,16 @@
         </div>
         <div class="bottom">
             <button class="btn"onclick="getRates()" id="convertButton">Convert</button>
-            <h2>Conversion Rate:</h2>
-            <h2 id="conversionRate"></h2>
-            <h2>Converted Amount:</h2>
+            
+
+            <h2 id="start"></h2>
             <h3 id="convertedAmount"></h3>
+
+            <!-- exchange rate -->
+            <h2> 1 EUR = </h2>
+            <h2 id="oneEuro"></h2>
+            <h2 id="conversionRate"></h2>
+          
         </div>
     </div>
     <script src="app.js"></script>
