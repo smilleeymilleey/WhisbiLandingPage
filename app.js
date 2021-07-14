@@ -22,8 +22,6 @@ function getRates() {
         let seconds = "0" + date.getSeconds();
         let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
-        console.log(res)
-
         document.getElementById("start").innerHTML=startAmount + " Euros =";
         document.getElementById("conversionRate").innerHTML=res.rates[newCurrency] + " " + newCurrency;
         document.getElementById("convertedAmount").innerHTML= newAmount + " " + newCurrency;

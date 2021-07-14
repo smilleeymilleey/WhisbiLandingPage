@@ -8,13 +8,18 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="title">Eurpoean Euro Currency Converter</h1>
     <div class="convertor-card">
+        <div class="card-container">
         <div class="row">
             <p id="date"></p>
-            <p id="time"></p>
-            <div class="column">Amount</div>
-            <div class="column">From</div>
-            <div class="column">To</div>
+            <!-- <p id="time"></p> -->
+            <div class="columnContainer">
+                <div class="column">Amount</div>
+                <div class="column">From</div>
+                <div class="column">To</div>
+            </div>
         <div class="row">
             <div class="column">
             <input id="startAmount">
@@ -32,19 +37,17 @@
                 </select>
             </div>
           </div>
+          <button class="btn"onclick="getRates()" id="convertButton">Convert</button>
+              <!-- new amount -->
+              <h3 id="start"></h3>
+              <h2 id="convertedAmount"></h2>
+              <!-- exchange rate -->
+              <p class="exchangeR"> 1 EUR = </p>
+              <p id="conversionRate"></p>
         </div>
-        <div class="bottom">
-            <button class="btn"onclick="getRates()" id="convertButton">Convert</button>
-            
-
-            <h3 id="start"></h3>
-            <h2 id="convertedAmount"></h2>
-
-            <!-- exchange rate -->
-            <p> 1 EUR = </p>
-            <p id="conversionRate"></p>
-          
         </div>
+    </div>
+    <div class="padding"></div>
     </div>
     <script src="app.js"></script>
 </body>
