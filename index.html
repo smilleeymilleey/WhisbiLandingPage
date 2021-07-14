@@ -13,8 +13,8 @@
             <a>
                 <button class="account" href="#news">Create Account</button>    
             </a>
-                <a id="login" href="#home" class="active">Log In</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a id="login" href="#home" class="active">Log In</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
               <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -39,7 +39,8 @@
                     </div>
                     <div class="column">
                         <label>To</label>
-                        <select onChange="getAllCurrencies()" id="newCurrency">
+                        <select id="newCurrency">
+
                             <option value="JPY" id="euro">JPY</option>
                             <option value="CAD" id="euro">CAD</option>
                             <option value="MXN" id="euro">MXN</option>
@@ -47,7 +48,7 @@
                     </div>
                 </div>
             </div>
-          <button class="btn"onclick="getRates()" id="convertButton">Convert</button>
+          <button class="btn" onclick="getRates()" id="convertButton">Convert</button>
         </div>
         </div>
         <div class="newContainer">
