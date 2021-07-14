@@ -24,6 +24,8 @@
                     <label for="currencyNames">Choose End Currency :</label>
                     <select id="newCurrency">
                         <option value="JPY" id="euro">JPY</option>
+                        <option value="CAD" id="euro">CAD</option>
+                        <option value="MXN" id="euro">MXN</option>
                     </select>
                 </div>
                 <div class="value-section">
@@ -31,8 +33,11 @@
                     <input>
                 </div>
         </div>
-            <button id="convertButton">Convert</button>
-            <h2 id="exchangeRate"></h2>
+            <button onclick="getRates()" id="convertButton">Convert</button>
+            <div>
+                <h2>Your Conversion Rate is:</h2>
+                <h3 id="exchangeRate"></h3>
+            </div>
         </div>     
         </div>
     </div>
