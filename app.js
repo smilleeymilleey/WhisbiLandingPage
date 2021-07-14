@@ -15,15 +15,24 @@ function getRates() {
         let res = JSON.parse(this.responseText)
         let conversionRate = res.rates[newCurrency]
         let newAmount = startAmount*conversionRate
-      
+        let unix_timestamp = res.timestamp;
+        let date = new Date(unix_timestamp * 1000);
+        let hours = date.getHours();
+        let minutes = "0" + date.getMinutes();
+        let seconds = "0" + date.getSeconds();
+        let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+
         console.log(res)
 
         document.getElementById("start").innerHTML=startAmount + " Euros =";
         document.getElementById("conversionRate").innerHTML=res.rates[newCurrency] + " " + newCurrency;
         document.getElementById("convertedAmount").innerHTML= newAmount + " " + newCurrency;
+        document.getElementById("date").innerHTML= res.date;
+        document.getElementById("time").innerHTML = formattedTime;
     } 
       
       
+
 
     };
 
