@@ -5,30 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
     <div class="convertor-card">
         <div class="base">
-            <button onclick="getRates()" class="name">US Dollar</button>
+            <div class="dropdown">
+                <label  for="currencyNames">Choose Start Currency :</label>
+                <select id="names" onChange="convertRates()">
+                    <option id="usd" >USD</option>
+                    <option id="peso" >Mexican Peso</option>
+                    <option id="yen">Japanese Yen</option>
+                    <option id="canada">Canadian Dollar</option>
+                </select>
+            </div>
             <div class="value-section">
-                <span class="value">271
-                </span>
                 <span class="symbol">$</span>
+                <input>
             </div>
-            <span class="abbr">USD</span>
+            <button id="convertButton">Convert</button>
         </div>
-        <div class="converted">
-            <button onclick="getRates()" class="name">Russian Ruble</button>
-            <div class="value-section">
-                <span class="value">15.58</span>
-                <span class="symbol">P</span>
-            </div>
-            <span class="abbr">RUB</span>
+            <div class="dropdown">
+                <label  for="currencyNames">Choose End Currency :</label>
+                <select onChange="convertRates()" >
+                    <option id="usd" >USD</option>
+                    <option id="peso">Mexican Peso</option>
+                    <option id="yen">Japanese Yen</option>
+                    <option id="canada">Canadian Dollar</option>
+                </select>
+                <div class="value-section">
+                    <span class="value">
+                    </span>
+                    
+                </div>
         </div>
         <h2 id="display"></h2>
     </div>
-<script src="index.js"></script>
-<script src="API.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

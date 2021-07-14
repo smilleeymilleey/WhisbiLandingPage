@@ -1,0 +1,24 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "whisbi currency converter",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smilleeymilleey/WhisbiLandingPage.git"
+  },
+  "author": "caitlyn miley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smilleeymilleey/WhisbiLandingPage/issues"
+  },
+  "homepage": "https://github.com/smilleeymilleey/WhisbiLandingPage#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-static": "^0.7.11"
+  }
+}
