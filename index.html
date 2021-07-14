@@ -12,11 +12,8 @@
         <div class="base">
             <div class="dropdown">
                 <label  for="currencyNames">Choose Start Currency :</label>
-                <select id="names" onChange="convertRates()">
-                    <option id="usd" >USD</option>
-                    <option id="peso" >Mexican Peso</option>
-                    <option id="yen">Japanese Yen</option>
-                    <option id="canada">Canadian Dollar</option>
+                <select id="names">
+                    <option value="EUR" id="euro">EUR</option>
                 </select>
             </div>
             <div class="value-section">
@@ -27,16 +24,12 @@
         </div>
             <div class="dropdown">
                 <label  for="currencyNames">Choose End Currency :</label>
-                <select onChange="convertRates()" >
-                    <option id="usd" >USD</option>
-                    <option id="peso">Mexican Peso</option>
-                    <option id="yen">Japanese Yen</option>
-                    <option id="canada">Canadian Dollar</option>
+                <select>
+                    <option value="EUR" id="euro">EUR</option>
                 </select>
                 <div class="value-section">
                     <span class="value">
-                    </span>
-                    
+                    </span>  
                 </div>
         </div>
         <h2 id="display"></h2>
