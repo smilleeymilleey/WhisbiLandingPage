@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-
-    <!-- beginning of redesign -->
-
     <div class="convertor-card">
         <div class="row">
             <div class="column">Amount</div>
@@ -33,50 +30,15 @@
                 </select>
             </div>
           </div>
-          </div>
+        </div>
         <div class="bottom">
             <button class="btn"onclick="getRates()" id="convertButton">Convert</button>
             <h2>Conversion Rate:</h2>
             <h2 id="conversionRate"></h2>
             <h2>Converted Amount:</h2>
             <h3 id="convertedAmount"></h3>
-
         </div>
     </div>
-
-
-<!-- end of redesign -->
-    <!-- <div class="convertor-card"> -->
-        <!-- Api only servers eurpoe conversions -->
-        <!-- <div class="dropdown">
-        <label  for="currencyNames">Choose Start Currency :</label>
-        <select id="names">
-            <option value="EUR" id="euro">EUR</option>
-        </select>
-        <div class="value-section">
-        <span class="symbol">$</span> -->
-        <!-- <input id="startAmount"> -->
-        <!-- </div>
-        <div class="base">
-            <div class="dropdown">
-                <label for="currencyNames">Choose End Currency :</label>
-                <select id="newCurrency">
-                    <option value="JPY" id="euro">JPY</option>
-                    <option value="CAD" id="euro">CAD</option>
-                    <option value="MXN" id="euro">MXN</option>
-                </select>
-            </div>
-        </div>
-            <button onclick="getRates()" id="convertButton">Convert</button>
-            <div>
-                <h2>Conversion Rate:</h2>
-                <h2 id="conversionRate"></h2>
-                <h2>Converted Amount:</h2>
-                <h3 id="convertedAmount"></h3>
-            </div>
-        </div>     
-        </div>
-    </div> -->
     <script src="app.js"></script>
 </body>
 </html>

@@ -22,8 +22,6 @@ body {
 }
 
 /* start of redesign card */
-
-
 .column {
   float: left;
   width: 33.33%;
@@ -40,66 +38,3 @@ body {
   width: 75%;
   margin-left: 10%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* end of re-design */
-.converted {
-  grid-column: 1 / 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 4vmin;
-  position: relative;
-}
-
-.base {
-    flex-direction: column;
-    grid-row: 1 / 2;
-    margin-top: 5px;
-    padding-left: 5px;
-    align-items: center;
-}
-
-
-.converted {
-    flex-direction: column-reverse;
-    grid-row: 2 / 3;
-}
-
-.name {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 3vmin;
-    letter-spacing: 0.2em;
-  }
-  
-  .value {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 11vmin;
-    letter-spacing: 0.04em;
-  }
-  
-  .symbol {
-    font-family: 'Noto Sans', sans-serif;
-    margin-left: 2%;
-    opacity: 0.7;
-  }
-  
-  .abbr {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.1em;
-    opacity: 0.5;
-  }
