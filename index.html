@@ -17,35 +17,38 @@
         <div class="row">
             <!-- <p id="time"></p> -->
             <div class="columnContainer">
-                <div class="column">Amount</div>
-                <div class="column">From</div>
-                <div class="column">To</div>
+                <div class="row">
+                    <div class="column">
+                    <label>Amount</label>
+                    <input id="startAmount">
+                    </div>
+                    <div class="column">
+                    <label id="from">From</label>
+                    <select id="names">
+                        <option value="EUR" id="euro">EUR</option>
+                    </select>
+                    </div>
+                    <div class="column">
+                        <label>To</label>
+                        <select onChange="getAllCurrencies()" id="newCurrency">
+                            <option value="JPY" id="euro">JPY</option>
+                            <option value="CAD" id="euro">CAD</option>
+                            <option value="MXN" id="euro">MXN</option>
+                        </select>
+                    </div>
+                  </div>
             </div>
-        <div class="row">
-            <div class="column">
-            <input id="startAmount">
-            </div>
-            <div class="column">
-            <select id="names">
-                <option value="EUR" id="euro">EUR</option>
-            </select>
-            </div>
-            <div class="column">
-                <select onChange="getAllCurrencies()" id="newCurrency">
-                    <option value="JPY" id="euro">JPY</option>
-                    <option value="CAD" id="euro">CAD</option>
-                    <option value="MXN" id="euro">MXN</option>
-                </select>
-            </div>
-          </div>
           <button class="btn"onclick="getRates()" id="convertButton">Convert</button>
-              <!-- new amount -->
-              <h3 id="start"></h3>
-              <h2 id="convertedAmount"></h2>
-              <!-- exchange rate -->
-              <p class="exchangeR"> 1 EUR = </p>
-              <p id="conversionRate"></p>
-               <p id="date"></p>
+        </div>
+        <div class="newContainer">
+            <!-- new amount -->
+            <h3 id="start"></h3>
+            <h2 id="convertedAmount"></h2>
+            <!-- exchange rate -->
+            <p class="exchangeR"> 1 EUR = </p>
+            <p id="conversionRate"></p>
+            <!-- date -->
+             <p id="date"></p>
         </div>
         </div>
     </div>

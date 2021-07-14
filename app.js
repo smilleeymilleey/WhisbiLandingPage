@@ -25,7 +25,7 @@ function getRates() {
         document.getElementById("start").innerHTML=startAmount + " Euros =";
         document.getElementById("conversionRate").innerHTML=res.rates[newCurrency] + " " + newCurrency;
         document.getElementById("convertedAmount").innerHTML= newAmount + " " + newCurrency;
-        document.getElementById("date").innerHTML= res.date;
+        document.getElementById("date").innerHTML= "Last updated " + res.date;
         document.getElementById("time").innerHTML = formattedTime;
     } 
       
