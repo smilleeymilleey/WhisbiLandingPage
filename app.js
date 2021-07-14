@@ -2,7 +2,7 @@
 // determine rates 
 
 
-function getRates () {
+function getRates() {
   let startSelect= document.getElementById("names")
   let endSelect= document.getElementById("newCurrency")
   let newCurrency = endSelect.options[endSelect.selectedIndex].text;
@@ -18,10 +18,12 @@ function getRates () {
       if (this.readyState == 4 && this.status == 200) {
         let res = JSON.parse(this.responseText)
         let conversionRate = res.rates[newCurrency]
+
+        console.log(conversionRate)
         let newAmount = startAmount*conversionRate 
         
-        document.getElementById("exchangeRate").innerHTML=res.rates[newCurrency]
-        document.getElementById("convertedAmount").innerHTML=newAmount;
+        document.getElementById("conversionRate").innerHTML=res.rates[newCurrency]
+        document.getElementById("convertedAmount").innerHTML= newAmount;
 
 
         
