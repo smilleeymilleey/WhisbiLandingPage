@@ -17,7 +17,7 @@
             </select>
             <div class="value-section">
                 <span class="symbol">$</span>
-                <input>
+                <input id="startAmount">
             </div>
             <div class="base">
                 <div class="dropdown">
@@ -35,8 +35,10 @@
         </div>
             <button onclick="getRates()" id="convertButton">Convert</button>
             <div>
-                <h2>Your Conversion Rate is:</h2>
+                <h2>Conversion Rate:</h2>
                 <h3 id="exchangeRate"></h3>
+                <h2>Converted Amount:</h2>
+                <h3 id="convertedAmount"></h3>
             </div>
         </div>     
         </div>
