@@ -9,30 +9,34 @@
 </head>
 <body>
     <div class="convertor-card">
-        <div class="base">
-            <div class="dropdown">
-                <label  for="currencyNames">Choose Start Currency :</label>
-                <select id="names">
-                    <option value="EUR" id="euro">EUR</option>
-                </select>
-            </div>
-            <div class="value-section">
-                <span class="symbol">$</span>
-                <input>
-            </div>
-            <button id="convertButton">Convert</button>
-        </div>
-            <div class="dropdown">
-                <label  for="currencyNames">Choose End Currency :</label>
-                <select>
-                    <option value="EUR" id="euro">EUR</option>
-                </select>
+        <h2 id="display"></h2>
+        <!-- europe only no api connected -->
+        <div class="dropdown">
+            <label  for="currencyNames">Choose Start Currency :</label>
+            <select id="names">
+                <option value="EUR" id="euro">EUR</option>
+               
+            </select>
+            <div class="base">
+                <div class="dropdown">
+                    <label for="currencyNames">Choose Start Currency :</label>
+                    <select id="names">
+                        <option value="EUR" id="euro">EUR</option>
+                        <option value="JPY" id="euro">JPY</option>
+                    </select>
+                </div>
                 <div class="value-section">
-                    <span class="value">
-                    </span>  
+                    <span class="symbol">$</span>
+                    <input>
+                </div>
+                <div class="value-section">
+                    <span class="symbol">$</span>
+                    <input>
                 </div>
         </div>
-        <h2 id="display"></h2>
+            <button id="convertButton">Convert</button>
+        </div>     
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

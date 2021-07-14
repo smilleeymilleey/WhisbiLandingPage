@@ -8,15 +8,18 @@ document.getElementById("convertButton").onclick =getRates();
 
 function getRates () {
   let startSelect= document.getElementById("names")
+  let endSelect= document.getElementById("")
   let currency= startSelect.options[startSelect.selectedIndex].text;
+  
   console.log(currency)
     console.log("its working");
     
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("display").innerHTML =
-        this.responseText;
+        let res = JSON.parse(this.responseText)
+        document.getElementById("display").innerHTML= res.date
+       
       } 
     };
 
