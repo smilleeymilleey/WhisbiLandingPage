@@ -95,9 +95,7 @@ body {
 
 /* navbar */
 
-#login {
-  padding-right: 10%;
-}
+
 .account {
   display: inline-flex;
   align-items: center;
