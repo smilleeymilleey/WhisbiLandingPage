@@ -11,57 +11,54 @@
     <div class="container">
         <div class="topnav" id="myTopnav">
             <a>
-                <button class="account" href="#news">Create Account</button>    
+            <button class="createAccount" href="#news">Create Account</button>    
             </a>
             <a id="login" href="#home" class="active">Log In</a>
-            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-              <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
             </a>
         </div>
         <div class="titleContainer">
             <h1 class="title">Eurpoean Euro Currency Converter</h1>
         </div>
-    <div class="convertor-card">
-        <div class="card-container">
-        <div class="row">
-            <!-- <p id="time"></p> -->
+        <div class="convertor-card">
+            <div class="card-container">
+            <div class="row">
             <div class="columnContainer">
-                <div class="row">
-                    <div class="column">
-                        <label>Amount</label>
-                        <input id="startAmount">
-                    </div>
-                    <div class="column">
-                        <label id="from">From</label>
-                        <select id="names">
-                            <option value="EUR" id="euro">EUR</option>
-                        </select>
-                    </div>
-                    <div class="column">
-                        <label>To</label>
-                        <select id="newCurrency">
-
-                            <option value="JPY" id="euro">JPY</option>
-                            <option value="CAD" id="euro">CAD</option>
-                            <option value="MXN" id="euro">MXN</option>
-                        </select>
-                    </div>
-                </div>
+            <div class="row">
+            <div class="column">
+                <p class="p">Amount</p>
+                <input id="startAmount">
+                <p class="pApi">Rates from exchangeratesapi.com</p>
             </div>
-          <button class="btn" onclick="getRates()" id="convertButton">Convert</button>
+            <div class="column">
+                <p class="p">From</p>
+            <select class="custom-select" id="names">
+                <option value="EUR" id="euro">EUR</option>
+            </select>
+            </div>
+            <div class="column">
+                <p class="p">To</p>
+            <select class="custom-select" id="newCurrency"></select>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row2">
+            <button class="btn" onclick="getRates()" id="convertButton">Convert</button>
         </div>
         </div>
         <div class="newContainer">
-            <!-- new amount -->
+        <!-- new amount -->
             <h3 id="start"></h3>
             <h2 id="convertedAmount"></h2>
             <!-- exchange rate -->
             <p class="exchangeR"> 1 EUR = </p>
             <p id="conversionRate"></p>
             <!-- date -->
-             <p id="date"></p>
+            <p id="date"></p>
         </div>
-    </div>
+        </div>
     <div class="padding"></div>
     </div>
     <script src="app.js"></script>
