@@ -53,7 +53,8 @@ This is a project that compares the euro exchange rate with other currencies acr
 
 Currency Converter
 
-<img src=".currencyConverter.PNG">
+![alt text](https://imgur.com/hxPXSF1)
+
 
  This application allows you to convert any amount of euros to any other currency in the world and compare the exchange rates with an easy to view chart! 
 
