@@ -1,3 +1,50 @@
+// chart begin 
+
+window.onload = function() {
+
+  var dataPoints = [];
+  
+  var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2",
+    title: {
+      text: "Euro Currency Exchange Rates"
+    },
+    axisY: {
+      title: "Exchange Rates",
+      titleFontSize: 24,
+      minimum: 0,
+      maximum: 1000,
+    },
+    axisX: {
+      title: "Currencies"
+    },
+    data: [{
+      type: "column",
+      yValueFormatString: "#,### Rate",
+      dataPoints: dataPoints
+    }]
+  });
+  
+  window.addData = function (data) {
+    console.log(data)
+    for (var i = 0; i < data.length; i++) {
+      dataPoints.push({
+        label: data[i].currency,
+        y: data[i].rate
+      });
+    }
+    console.log(dataPoints);
+    chart.render();
+  
+  }
+}
+
+  
+  
+
+// chart end
+
 let currencies = [ "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN", "BHD", "BIF", "BMD", "BND", "BOB", "BRL", "BSD", "BTC", "BTN", "BWP", "BYN", "BYR", "BZD", "CAD", "CDF", "CHF", "CLF", "CLP", "CNY", "COP", "CRC", "CUC", "CUP", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP", "ERN", "ETB", "EUR", "FJD", "FKP", "GBP", "GEL", "GGP", "GHS", "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HTG", "HUF", "IDR", "ILS", "IMP", "INR", "IQD", "IRR", "ISK", "JEP", "JMD", "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KPW", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LRD", "LSL", "LTL", "LVL", "LYD", "MAD", "MDL", "MGA", "MKD", "MMK", "MNT", "MOP", "MRO", "MUR", "MVR", "MWK", "MXN", "MYR", "MZN", "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR", "PAB", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SDG", "SEK", "SGD", "SHP", "SLL", "SOS", "SRD", "STD", "SVC", "SYP", "SZL", "THB", "TJS", "TMT", "TND", "TOP", "TRY", "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS", "VEF", "VND", "VUV", "WST", "XAF", "XAG", "XAU", "XCD", "XDR", "XOF", "XPF", "YER", "ZAR", "ZMK", "ZMW", "ZWL" ];
 
 
@@ -9,6 +56,11 @@ currencies.forEach(element => {
   
 });
 
+function parseChartData(data){
+  let parsedData = Object.keys(data.rates).map(item => { return {"currency": item, "rate": data.rates[item]} });
+  
+  window.addData(parsedData);
+}
 
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -46,13 +98,13 @@ function getRates() {
         document.getElementById("conversionRate").innerHTML= "1 EUR = " + res.rates[newCurrency] + " " + newCurrency;
         document.getElementById("convertedAmount").innerHTML= newAmount + " " + newCurrency;
         document.getElementById("date").innerHTML= "Last updated " + res.date;
-        document.getElementById("time").innerHTML = formattedTime;
      
+        parseChartData(res);
     } 
     };
 
-    xhttp.open("GET", "http://api.exchangeratesapi.io/v1/latest?access_key=04f180122fa4b611c6851b8f7b6774cd&base=" + startCurrency + 
-  "&symbols=" + " " + newCurrency);
+    xhttp.open("GET", "http://api.exchangeratesapi.io/v1/latest?access_key=04f180122fa4b611c6851b8f7b6774cd");
     xhttp.send();
-
 }
+
+getRates()
