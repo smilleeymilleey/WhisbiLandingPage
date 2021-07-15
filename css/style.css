@@ -27,11 +27,12 @@ body {
 .title {
   color: white;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
 }
 
-.titleContainer {
-  margin-top: 10%;
-}
+
 
 .convertor-card {
   margin: auto;
@@ -175,7 +176,7 @@ body {
   text-align: center;
   text-decoration: none;
   transition-duration: 0.3s;
-  font-size: 20px;
+  font-size: px;
   color: rgb(255, 255, 255);
   background: rgb(0, 113, 235);
   border: 2px solid rgb(0, 113, 235);

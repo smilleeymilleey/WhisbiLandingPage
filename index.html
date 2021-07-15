@@ -9,8 +9,8 @@
     
 </head>
 <body>
-    <div class="container">
-        <div class="topnav" id="myTopnav">
+    <main class="container">
+        <nav class="topnav" id="myTopnav">
             <a>
             <button class="createAccount" href="#news">Create Account</button>    
             </a>
@@ -18,29 +18,29 @@
             <a href="javascript:void(0);" class="icon">
             <i class="fa fa-bars"></i>
             </a>
-        </div>
-        <div class="titleContainer">
-            <title class="title">Eurpoean Euro Currency Converter</title>
-        </div>
-        <div class="convertor-card">
+        </nav>
+        <header class="titleContainer">
+            <h1 class="title">Eurpoean Euro Currency Converter</h1>
+        </header>
+        <section class="convertor-card">
             <div class="card-container">
                 <div class="row">
                     <div class="columnContainer">
                         <div class="row">
-                            <div class="column">
-                                <p class="p">Amount</p>
-                                <input id="startAmount">
-                             </div>
-                            <div class="column">
-                                <p class="p">From</p>
+                            <article class="column">
+                                <heading class="p">Amount</heading>
+                                <input placeholder="0" id="startAmount">
+                            </article>
+                            <article class="column">
+                                <heading class="p">From</heading>
                                 <select class="custom-select" id="names">
                                     <option value="EUR" id="euro">EUR</option>
                                 </select>
-                            </div>
-                            <div class="column">
-                                <p class="p">To</p>
+                            </article>
+                            <article class="column">
+                                <heading class="p">To</heading>
                                 <select class="custom-select" id="newCurrency"></select>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -54,10 +54,10 @@
                 </div>
                 <p id="date"></p>
             </div>
-        </div>
+        </section>
     <div class="padding"></div>
     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-</div>
+    </main>
     <script src="app.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
