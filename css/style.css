@@ -47,7 +47,8 @@ body {
 }
 
 #date {
-  color: darkgray
+  color: darkgray;
+
 }
 
 .padding {
@@ -58,7 +59,8 @@ body {
 .p {
   text-align: left;
   font-weight: bold;
-  margin-left: 20%;  
+  margin-left: 20%;
+  font-size: 20px;  
 }
 
 .row {
@@ -69,19 +71,12 @@ body {
   text-align: center;
 }
 .row2 {
-  align-items: center;
+  align-items: left;
   padding-right: 15%;
   padding-top: 10px;
   text-align: right;
 }
 
-.pApi {
-  width: 100%;
-  height: 50px;
-  margin-top: 13%;
-  color: darkblue;
-
-}
 .custom-select {
   position: relative;
   font-family: Arial;
@@ -93,6 +88,7 @@ body {
   box-sizing: border-box;
   border-radius: 5px;
   margin-left: 5%;
+  margin-bottom: 10%;
   width: 75%;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 6px;
@@ -110,6 +106,7 @@ body {
   padding: 12px;
   color: rgb(20, 30, 55);
   background: none;
+  margin-bottom: 10%;
 }
 
 #newCurrency {
@@ -120,23 +117,24 @@ body {
   padding: 12px;
   color: rgb(20, 30, 55);
   background: none;
+  margin-bottom: 10%;
 }
 
 .btn {
-  width: 20%;
+  width: 120%;
   height: 50px;
-  margin-top: 5%;
   border-color:rgb(0, 113, 235);
   border-style: solid;
   border-radius: 8px;
   background-color:rgb(0, 113, 235);
   color: white;
   box-shadow: 5px 5px 5px darkgrey;
-  
+
 }
 
 .btn:hover {
   background-color: #050648;
+  border-color: #050648;
   color: white;
   box-shadow: 10px 5px 5px darkgrey;
 }
@@ -145,16 +143,15 @@ body {
   margin: auto;
   width: 70%;
   padding: 10px;
+  align-items: left;
 }
 
-.exchangeR {
-  padding-top: 5px;
-  font-weight:bold;
+#start {
+  align-items: left;
+  margin-top: 10%;
+  padding-top: 5%;
 }
 
-#conversionRate {
-  font-weight: bold;
-}
 .newContainer {
   margin-left: 12%;
 }
@@ -182,6 +179,10 @@ body {
   border-radius: 8px;
 }
 
+.text {
+  font-size: 15px;
+  font-weight: normal;
+}
 .topnav {
   background-color: #050648;
   overflow: hidden;

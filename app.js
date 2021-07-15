@@ -12,14 +12,14 @@ currencies.forEach(element => {
 
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-// function toggleNav() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
+function toggleNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 function getRates() {
   let startSelect= document.getElementById("names")
@@ -43,7 +43,7 @@ function getRates() {
         let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
 
         document.getElementById("start").innerHTML=startAmount + " Euros =";
-        document.getElementById("conversionRate").innerHTML=res.rates[newCurrency] + " " + newCurrency;
+        document.getElementById("conversionRate").innerHTML= "1 EUR = " + res.rates[newCurrency] + " " + newCurrency;
         document.getElementById("convertedAmount").innerHTML= newAmount + " " + newCurrency;
         document.getElementById("date").innerHTML= "Last updated " + res.date;
         document.getElementById("time").innerHTML = formattedTime;
