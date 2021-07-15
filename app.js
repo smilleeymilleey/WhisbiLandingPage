@@ -49,18 +49,8 @@ function getRates() {
         document.getElementById("time").innerHTML = formattedTime;
      
     } 
-      
-    
-
-
-
-    // inside of the loop for each currency create option element and append child to newcurrencyselect 
-      
-
-
     };
 
-    // currency converter is not free so find end point that gives conversion rates and manually convert rates for drop down menu items 
     xhttp.open("GET", "http://api.exchangeratesapi.io/v1/latest?access_key=04f180122fa4b611c6851b8f7b6774cd&base=" + startCurrency + 
   "&symbols=" + " " + newCurrency);
     xhttp.send();

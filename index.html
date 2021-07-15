@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
 </head>
 <body>
     <div class="container">
@@ -19,47 +20,43 @@
             </a>
         </div>
         <div class="titleContainer">
-            <h1 class="title">Eurpoean Euro Currency Converter</h1>
+            <title class="title">Eurpoean Euro Currency Converter</title>
         </div>
         <div class="convertor-card">
             <div class="card-container">
-            <div class="row">
-            <div class="columnContainer">
-            <div class="row">
-            <div class="column">
-                <p class="p">Amount</p>
-                <input id="startAmount">
+                <div class="row">
+                    <div class="columnContainer">
+                        <div class="row">
+                            <div class="column">
+                                <p class="p">Amount</p>
+                                <input id="startAmount">
+                             </div>
+                            <div class="column">
+                                <p class="p">From</p>
+                                <select class="custom-select" id="names">
+                                    <option value="EUR" id="euro">EUR</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <p class="p">To</p>
+                                <select class="custom-select" id="newCurrency"></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="newContainer">
+                <h3 id="start"></h3>
+                <h2 id="convertedAmount"></h2>
+                <p class="text" id="conversionRate"></p>
+                <div class="row2">
+                    <button class="btn" onclick="getRates()" id="convertButton">Convert</button>
+                </div>
+                <p id="date"></p>
             </div>
-            <div class="column">
-                <p class="p">From</p>
-            <select class="custom-select" id="names">
-                <option value="EUR" id="euro">EUR</option>
-            </select>
-            </div>
-            <div class="column">
-                <p class="p">To</p>
-            <select class="custom-select" id="newCurrency"></select>
-            </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        <div class="newContainer">
-          
-        <!-- new amount -->
-            <h3 id="start"></h3>
-            <h2 id="convertedAmount"></h2>
-            <!-- exchange rate -->
-            <p class="text" id="conversionRate"></p>
-            <div class="row2">
-                <button class="btn" onclick="getRates()" id="convertButton">Convert</button>
-            </div>
-            <!-- date -->
-            <p id="date"></p>
-        </div>
         </div>
     <div class="padding"></div>
-    </div>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
