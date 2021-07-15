@@ -38,6 +38,8 @@ This is a project that compares the euro exchange rate with other currencies acr
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
       <a href="#built-with">Technologies Used</a>
     </li>
     <li><a href="#usage">Usage</a></li>
